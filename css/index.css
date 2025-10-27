@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+}
+
+nav img {
+  height: 60px;
+}
+nav {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  justify-content: space-between;
+  padding: 15px 30px;
+  border-radius: 8px;
+  margin: 10px;
+}
+
+.navbar h1 {
+  font-size: 28px;
+  color: #406382;
+}
+.name a {
+  font-weight: bold;
+  color: #1e88e5;
+}
+#image img {
+  height: 400px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.watches,
+.earbuds,
+.dialphones {
+  border: 0.5px solid rgb(30, 30, 28);
+  border-radius: 10px;
+  width: 200px;
+  height: 200px;
+  box-shadow: 5px 5px lightblue;
+}
+section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  font-style: oblique;
+  padding-bottom: 50px;
+}
+
+section button {
+  margin-top: 12px;
+  padding: 10px 20px;
+  background-color: #1e88e5;
+  border: none;
+  border-radius: 6px;
+}
+button a {
+  color: #fff;
+}
+button:hover {
+  background-color: #1565c0;
+}
+a {
+  text-decoration: none;
+}
+#footer {
+  background-color: rgb(235, 229, 221);
+  color: black;
+  display: flex;
+  justify-content: space-around;
+  height: 200px;
+  padding: 50px;
+}
+#footer ul {
+  list-style: none;
+  margin: 20px;
+  min-width: 200px;
+}
+#footer h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+#footer li {
+  margin-bottom: 5px;
+  font-size: 10px;
+}
+#footer p {
+  padding: 3px;
+  max-width: 250px;
+  font-size: 10px;
+}
+.footer-section ul li a {
+  text-decoration: none;
+  color: black;
+}
+.footer-bottom h1 {
+  font-size: 20px;
+}
