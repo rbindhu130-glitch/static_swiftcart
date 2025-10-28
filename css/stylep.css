@@ -41,7 +41,7 @@ nav {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
   margin: 30px auto;
-  max-width: 1200px;
+  max-width: 1000px;
   justify-content: center;
 }
 
@@ -52,8 +52,6 @@ nav {
   text-align: center;
   cursor: pointer;
   transition: transform 0.3s ease;
-  height: 400px;
-  overflow: hidden;
 }
 
 .product-card:hover {
@@ -62,10 +60,9 @@ nav {
 
 .product-card img.watch {
   width: 100%;
-  height: 250px;
-  object-fit: cover;
+  max-height: 200px;
+  object-fit: contain;
   border-radius: 8px;
-  display: block;
 }
 
 .brand {
@@ -113,6 +110,7 @@ a {
   text-decoration: none;
 }
 
+/* ---------- FOOTER (Compact) ---------- */
 #footer {
   background-color: rgb(235, 229, 221);
   color: black;
@@ -163,11 +161,18 @@ a {
 }
 
 .footer-bottom {
-  width: 100%;
+  width: 100%;  
   text-align: center;
   font-size: 11px;
   color: #333;
   margin-top: 10px;
   border-top: 1px solid #ccc;
   padding-top: 8px;
+}
+.product-card img.watch {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* fills the card nicely */
+  border-radius: 8px;
+  display: block;
 }
