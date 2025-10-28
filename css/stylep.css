@@ -110,49 +110,62 @@ a {
   text-decoration: none;
 }
 
+/* ---------- FOOTER (Compact) ---------- */
 #footer {
   background-color: rgb(235, 229, 221);
   color: black;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  padding: 50px 20px;
+  padding: 25px 10px;
+  gap: 20px;
+  border-radius: 8px;
+  margin-top: 30px;
+}
+
+#footer .footer-section {
+  min-width: 180px;
+  flex: 1;
+}
+
+#footer h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: bold;
 }
 
 #footer ul {
   list-style: none;
-  margin: 20px;
-  min-width: 200px;
-}
-
-#footer h2, #footer h3 {
-  font-size: 20px;
-  margin-bottom: 15px;
+  padding: 0;
+  margin: 0;
 }
 
 #footer li {
   margin-bottom: 5px;
-  font-size: 14px;
+  font-size: 12px;
+}
+
+#footer li a {
+  text-decoration: none;
+  color: black;
+}
+
+#footer li a:hover {
+  color: #1e88e5;
 }
 
 #footer p {
-  font-size: 14px;
-  padding: 3px;
-  max-width: 250px;
-}
-
-.footer-section li a {
-  color: black;
-  display: block;
-  margin-bottom: 5px;
+  font-size: 12px;
+  line-height: 1.3;
+  margin-bottom: 6px;
 }
 
 .footer-bottom {
+  width: 100%;  
   text-align: center;
-  width: 100%;
-  margin-top: 20px;
-}
-
-.footer-bottom h1 {
-  font-size: 20px;
+  font-size: 11px;
+  color: #333;
+  margin-top: 10px;
+  border-top: 1px solid #ccc;
+  padding-top: 8px;
 }
