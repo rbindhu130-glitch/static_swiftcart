@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root {
+    --primary: #4f46e5;
+    --primary-dark: #4338ca;
+    --secondary: #7c3aed;
+    --accent: #f59e0b;
+    --bg: #f8fafc;
+    --text: #1e293b;
+    --text-light: #64748b;
+    --white: #ffffff;
+    --glass-bg: rgba(255, 255, 255, 0.7);
+    --border: rgba(226, 232, 240, 0.8);
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+/* Header & Navbar */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 15px 20px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 30px;
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+nav img {
+    height: 40px;
+    border-radius: 8px;
+}
+
+nav h1 {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.name {
+    display: flex;
+    gap: 25px;
+}
+
+.name a {
+    font-weight: 600;
+    color: var(--text);
+    font-size: 14px;
+    position: relative;
+}
+
+.name a:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background: var(--primary);
+    transition: width 0.3s ease;
+}
+
+.name a:hover {
+    color: var(--primary);
+}
+
+.name a:hover:after {
+    width: 100%;
+}
+
+/* Common Layout Components */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    min-height: 60vh;
+}
+
+/* Hero / Banner */
+#image {
+    margin: 20px 0 40px;
+    overflow: hidden;
+    border-radius: 24px;
+    box-shadow: var(--shadow-lg);
+}
+
+#image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+/* Product Cards & Grids */
+h2 {
+    text-align: center;
+    font-size: 32px;
+    margin: 40px 0 30px;
+    font-weight: 700;
+}
+
+.product-grid,
+section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding-bottom: 60px;
+}
+
+.product-card {
+    background: var(--white);
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary);
+}
+
+.product-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.product-card .brand {
+    font-size: 13px;
+    color: var(--text-light);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.product-card .model {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 5px 0;
+}
+
+.product-card .price {
+    font-size: 20px;
+    color: var(--primary);
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.product-card .offer {
+    color: #10b981;
+    /* Emerald Green */
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+/* Buttons */
+.buy-button,
+section button,
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(79, 70, 229, 0.2);
+    color: var(--white);
+    font-weight: 600;
+    text-align: center;
+}
+
+.buy-button:hover,
+section button:hover,
+.btn:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 20px rgba(79, 70, 229, 0.3);
+    filter: brightness(1.1);
+}
+
+.buy-button a {
+    color: inherit;
+}
+
+/* Footer Section */
+footer#footer {
+    background: #1e1b4b;
+    color: var(--white);
+    padding: 80px 20px 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    margin-top: 60px;
+}
+
+footer#footer h2,
+footer#footer h3,
+footer#footer h4 {
+    color: var(--white);
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+footer#footer ul {
+    list-style: none;
+}
+
+footer#footer li {
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+footer#footer p {
+    color: #cbd5e1;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.footer-section ul li a {
+    color: #cbd5e1;
+}
+
+.footer-section ul li a:hover {
+    color: var(--white);
+    padding-left: 5px;
+}
+
+.footer-bottom {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-bottom h1 {
+    font-size: 16px;
+    color: var(--white);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.footer-bottom p {
+    color: #94a3b8;
+    font-size: 13px;
+}
+
+/* Utlities */
+.back-link {
+    display: inline-block;
+    margin: 30px 0;
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.back-link:hover {
+    padding-left: 5px;
+}

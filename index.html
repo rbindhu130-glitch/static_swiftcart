@@ -1,96 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Swiftkart</title>
-    <link rel="stylesheet" href="./css/index.css" />
-  </head>
-  <body>
-    <header>
-      <nav class=".navbar">
-        <img
-          src="./assets/Screenshot 2025-08-08 171912.png"
-          alt="swiftkart logo"
-        />
+
+<head>
+  <meta charset="UTF-8" />
+  
+  <title>Swiftkart</title>
+  <link rel="stylesheet" href="./css/index.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo-area">
+        <img src="./assets/Screenshot 2025-08-08 171912.png" alt="swiftkart logo" />
         <h1>SWIFTKART</h1>
-        <div class="name">
-          <a href="./pages/about_us.html">About us</a>
-          <a href="./pages/contact.html">contact us </a>
-        </div>
-      </nav>
-    </header>
-    <br />
-    <br />
+      </div>
+      <div class="name">
+        <a href="./pages/about_us.html">About Us</a>
+        <a href="./pages/contact.html" class="signup-btn">Contact Us</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
     <div id="image">
-      <img src="./assets/mobile_banner.png" alt="powerBank_banner" />
+      <img src="./assets/mobile_banner.png" alt="Featured Products Banner" />
     </div>
-    <h2>Categories</h2>
-    <br />
+
+    <div class="category-header" id="categories">
+      <h2>Categories</h2>
+    </div>
+
     <section>
-      <div>
-        <img
-          class="watches"
-          src="./assets/1754486848198-n05rzsa208i.jpg"
-          alt="watches"
-        />
+      <a href="./pages/watches.html" class="category-tile">
+        <img src="./assets/1754486848198-n05rzsa208i.jpg" alt="Watches" />
+        <div class="category-btn">Watches</div>
+      </a>
 
-        <br /><br />
-        <button>
-          <a class="watch-link" href="./pages/watches.html">watches</a>
-        </button>
-      </div>
-      <div>
-        <img
-          class="earbuds"
-          src="./assets/1754486858637-rk13inhau1n.jpg"
-          alt="Earbuds"
-        />
-        <br /><br />
-        <button><a href="./pages/earbuds.html">Earbuds</a></button>
-      </div>
-      <div>
-        <img
-          class="dialphones"
-          src="./assets/1754486869877-4c96aucf0x9.jpg"
-          alt="Dialphones"
-        />
-        <br /><br />
-        <button><a href="./pages/dialphones.html">Dialphones</a></button>
-      </div>
+      <a href="./pages/earbuds.html" class="category-tile">
+        <img src="./assets/1754486858637-rk13inhau1n.jpg" alt="Earbuds" />
+        <div class="category-btn">Earbuds</div>
+      </a>
+
+      <a href="./pages/dialphones.html" class="category-tile">
+        <img src="./assets/1754486869877-4c96aucf0x9.jpg" alt="Phones" />
+        <div class="category-btn">Phones</div>
+      </a>
     </section>
-    <footer id="footer">
+  </main>
+
+  <footer id="footer">
+    <div class="footer-section">
+      <h2>About us</h2>
+      <p>
+        Earbuds with crystal-clear sound and long-lasting comfort 🎧<br />
+        Watches that are both stylish and durable ⌚<br />
+        Dial Phones built for simplicity and long battery life 📱
+      </p>
+    </div>
+
+    <div class="footer-section">
+      <h4>Quick Links</h4>
       <ul>
-        <h2>About us</h2>
-
-        <li>
-          <p>
-            Earbuds with crystal-clear sound and long-lasting comfort 🎧<br />
-
-            Watches that are both stylish and durable ⌚<br />
-
-            Dial Phones built for simplicity and long battery life 📱
-          </p>
-        </li>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./index.html#image">Shop</a></li>
+        <li><a href="./pages/about_us.html">About Us</a></li>
+        <li><a href="./pages/contact.html">Contact Us</a></li>
+        <li><a href="#">Privacy Policy</a></li>
       </ul>
-      <div class="footer-section">
-        <h4>Quick Links</h4>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Shop</a></li>
-          <li><a href="#">New arrivals</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Terms & Condition</a></li>
-        </ul>
-      </div>
-      <div class="footer-section">
-        <h3>Contact us</h3>
-        <p>Email: support@swiftkart.com</p>
-        <p>Phone: +91 98765 43210</p>
-        <p>Location: Swiftkart HQ, Chennai, India</p>
-      </div>
-      <div class="footer-bottom">
-        <h1>follow us on</h1>
-        <p>  2025 swiftkart. All rights reserved.</p>
-      </div>
-    </footer>
-  </body>
+    </div>
+
+    <div class="footer-section">
+      <h3>Contact us</h3>
+      <p>Email: support@swiftkart.com</p>
+      <p>Phone: +91 98765 43210</p>
+      <p>Location: Swiftkart HQ, Chennai, India</p>
+    </div>
+
+    <div class="footer-bottom">
+      <h1>follow us on</h1>
+      <p>&copy; 2025 swiftkart. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+
 </html>
